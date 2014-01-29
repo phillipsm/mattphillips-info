@@ -45,3 +45,19 @@
 	max-height: 500px;
 	opacity: .7;
 }
+
+.project-container img {
+	margin-bottom: 30px;
+}
+
+.project-container h1 {
+	margin-top: 0px;
+}
+
+.project-container h4 {
+	margin-top: 30px;
+}
+
+.project-container .link-out {
+	font-size: 23px;
+}
