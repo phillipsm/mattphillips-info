@@ -48,6 +48,7 @@
 
 .project-container img {
 	margin-bottom: 30px;
+	border: 2px solid #ccc;
 }
 
 .project-container h1 {
