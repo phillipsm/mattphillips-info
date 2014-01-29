@@ -8,7 +8,7 @@ app.url_map.strict_slashes = False
 def landing():
     return render_template('landing.html')
     
-@app.route('/projects/ambient-timer')
+@app.route('/ambient-timer')
 def projects_ambient_timer():
     return render_template('projects/ambient-timer.html')
 
