@@ -1,17 +1,22 @@
-.header {
-	border-bottom: solid 1px #ccc;
+.border {
+/*	border-bottom: solid 1px #ccc;*/
 	margin-bottom: 50px;
 }
 
 .header h1 {
-	float: left;
 	font-family: 'PT Sans Narrow', sans-serif;
 	color: #555;
 	line-height: 1.2;
+	font-size: 59px;
+}
+
+.header p {
+	font-size: 18px;
+	color: #777;
 }
 
 .section-header {
-	margin-top: 130px;
+	margin-top: 200px;
 }
 
 .section-header h1 {
@@ -61,4 +66,9 @@
 
 .project-container .link-out {
 	font-size: 23px;
+}
+
+#sep {
+	margin-top: 60px;
+
 }

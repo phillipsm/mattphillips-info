@@ -11,6 +11,10 @@ def landing():
 @app.route('/ambient-timer')
 def projects_ambient_timer():
     return render_template('projects/ambient-timer.html')
+    
+@app.route('/awesome-box')
+def projects_awesome_box():
+    return render_template('projects/awesome-box.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
