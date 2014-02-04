@@ -1,17 +1,16 @@
-.border {
-/*	border-bottom: solid 1px #ccc;*/
-	margin-bottom: 50px;
-}
-
 .header h1 {
-	font-family: 'PT Sans Narrow', sans-serif;
+	font: bold 90px/1 "oswald";
+	text-transform: uppercase;
 	color: #555;
-	line-height: 1.2;
-	font-size: 59px;
+	margin-top: 30px;
 }
 
 .header p {
-	font-size: 18px;
+		font: 400 20px/21px "open sans";
+	color: #777;
+}
+
+.header p a {
 	color: #777;
 }
 
@@ -20,9 +19,9 @@
 }
 
 .section-header h1 {
-	font-family: 'PT Sans Narrow', sans-serif;
-	color: #555;
-	font-size: 25px;
+	color: #777;
+	font-size: 20px;
+	font-weight: normal;
 }
 
 .project-row {
@@ -36,11 +35,19 @@
 }
 
 .project-row h2 {
-	font-family: 'PT Sans Narrow', sans-serif;
-	color: #555;
+
 }
 
+.project-title {
+	font: 400 24px/1 "oswald";
+	letter-spacing: .1em;
+	color: #555;
+	margin-right: 6px;
+}
 .project-row p {
+	font-size: 14px;
+	line-height: 1.8;
+	margin-top: 24px;
 	color: #555;
 }
 
@@ -66,9 +73,4 @@
 
 .project-container .link-out {
 	font-size: 23px;
-}
-
-#sep {
-	margin-top: 60px;
-
 }
