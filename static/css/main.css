@@ -1,4 +1,4 @@
-.header h1 {
+.header h1	 {
 	font: bold 90px/1 "oswald";
 	text-transform: uppercase;
 	color: #555;
@@ -6,11 +6,7 @@
 }
 
 .header p {
-		font: 400 20px/21px "open sans";
-	color: #777;
-}
-
-.header p a {
+	font: 400 20px/21px "open sans";
 	color: #777;
 }
 
@@ -51,13 +47,6 @@
 	color: #555;
 }
 
-
-/*tmp*/
-.carousel-inner {
-	max-height: 500px;
-	opacity: .7;
-}
-
 .project-container img {
 	margin-bottom: 30px;
 	border: 2px solid #ccc;
@@ -73,4 +62,16 @@
 
 .project-container .link-out {
 	font-size: 23px;
+}
+
+.about {
+	margin-bottom: 100px;
+}
+
+.about .project-title {
+	margin-bottom: 30px;
+}
+
+a {
+	color: #4889b3;
 }
