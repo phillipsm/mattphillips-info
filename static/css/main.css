@@ -1,39 +1,93 @@
-.header {
+.landing .header {
 	margin-top: 25px;
+	margin-bottom: 200px;
 }
 
-.header h1	 {
-	font: bold 90px/.78 "oswald";
+.landing .header p {
+	font: bold 90px/.90 "oswald";
 	text-transform: uppercase;
 	color: #555;
 }
 
-.section-header {
-	margin-top: 200px;
-}
-
-.project-row {
-	margin-bottom: 100px;
-}
-
-.project-row img {
-/*	height: 250px;*/	
+.landing .project-row img {
 	box-shadow: 0 9px 18px -2px #fafafa, 0 -9px 18px -2px #fafafa;
 }
 
-.project-title {
+.landing .project-title {
 	font: 400 24px/1 "oswald";
 	letter-spacing: .1em;
 	color: #555;
 	margin-right: 5px;
 }
-.project-row p {
+
+.landing .project-row p {
 	font-size: 14px;
 	line-height: 1.8;
 	margin-top: 24px;
 	color: #6f6f6f;
 }
 
+.landing .about {
+	margin-bottom: 25px;
+}
+
+.landing .about .project-title {
+	font: 400 24px/1 "oswald";
+	margin-bottom: 30px;
+	color: #555;
+}
+
+.landing .about p {
+	font-size: 16px;
+	color: #6f6f6f;
+}
+
+a {
+	color: #4889b3;
+}
+
+
+/* Media queries to adjust on window resize start */
+@media(max-width:767px) {
+	.landing .project-row p {
+		margin-bottom: 60px;
+	}
+	
+	.landing .header {
+		margin-bottom: 60px;
+	}
+	
+	.landing .about {
+		margin-top: 0;
+	}
+}
+
+@media(min-width:768px) {
+	.landing .project-row p {
+		margin-bottom: 60px;
+	}
+
+	.landing .about {
+		margin-top: 140px;
+	}
+}
+
+@media(min-width:992px) {
+	.landing .project-row p {
+		margin-bottom: 90px;
+	}
+	
+	.landing .about {
+		margin-top: 110px;
+	}
+}
+
+@media(min-width:1200px){}
+/* Media queries to adjust on window resize end */
+	
+
+
+/* project page styling start */
 .project-container img {
 	margin-bottom: 30px;
 	border: 2px solid #ccc;
@@ -50,58 +104,4 @@
 .project-container .link-out {
 	font-size: 23px;
 }
-
-.about {
-	margin-bottom: 25px;
-}
-
-.about .project-title {
-	font: 400 24px/1 "oswald";
-	margin-bottom: 30px;
-	color: #555;
-}
-
-.about p {
-	font-size: 16px;
-	color: #6f6f6f;
-}
-
-a {
-	color: #4889b3;
-}
-
-
-@media(max-width:767px){
-	.project-row p {
-		margin-bottom: 60px;
-		max-width: 392px;
-	}
-	
-	.about p {
-		max-width: 392px;
-		margin-top: 24px;
-	}
-	
-	.section-header {
-		margin-top: 0;
-	}
-
-	.project-row {
-		margin-bottom: 0;
-	}
-	
-	.header {
-		margin-bottom: 60px;
-	}
-}
-@media(min-width:768px){
-	.project-row p {
-		margin-bottom: 60px;
-	}
-}
-@media(min-width:992px){
-	.project-row p {
-		margin-bottom: 90px;
-	}
-}
-@media(min-width:1200px){}
+/* project page styling end */
