@@ -22,7 +22,7 @@
 
 .landing .project-row p {
 	font-size: 14px;
-	line-height: 1.8;
+	line-height: 1.6;
 	margin-top: 24px;
 	color: #6f6f6f;
 }
@@ -33,12 +33,11 @@
 
 .landing .about .project-title {
 	font: 400 24px/1 "oswald";
-	margin-bottom: 30px;
+	margin-bottom: 24px;
 	color: #555;
 }
 
 .landing .about p {
-	font-size: 16px;
 	color: #6f6f6f;
 }
 
@@ -74,11 +73,11 @@ a {
 
 @media(min-width:992px) {
 	.landing .project-row p {
-		margin-bottom: 90px;
+		margin-bottom: 70px;
 	}
 	
 	.landing .about {
-		margin-top: 110px;
+		margin-top: 140px;
 	}
 }
 
