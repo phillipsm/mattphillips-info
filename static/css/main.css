@@ -9,18 +9,18 @@
 	color: #555;
 }
 
-.landing .project-row img {
+.landing .project-row img, .project-container .project-row img {
 	box-shadow: 0 9px 18px -2px #fafafa, 0 -9px 18px -2px #fafafa;
 }
 
-.landing .project-title {
+.landing .project-title, .project-container .project-row .project-title {
 	font: 400 24px/1 "oswald";
 	letter-spacing: .1em;
 	color: #555;
 	margin-right: 5px;
 }
 
-.landing .project-row p {
+.landing .project-row p, .project-container .project-row p {
 	font-size: 14px;
 	line-height: 1.6;
 	margin-top: 17px;
@@ -54,7 +54,7 @@ a:hover {
 
 /* Media queries to adjust on window resize start */
 @media(max-width:767px) {
-	.landing .project-row p {
+	.landing .project-row p, .project-container .project-row p {
 		margin-bottom: 60px;
 	}
 	
@@ -68,7 +68,7 @@ a:hover {
 }
 
 @media(min-width:768px) {
-	.landing .project-row p {
+	.landing .project-row p, .project-container .project-row p {
 		margin-bottom: 60px;
 	}
 
@@ -78,7 +78,7 @@ a:hover {
 }
 
 @media(min-width:992px) {
-	.landing .project-row p {
+	.landing .project-row p, .project-container .project-row p {
 		margin-bottom: 70px;
 	}
 	
@@ -112,6 +112,7 @@ a:hover {
 .project-container .header a:hover {
 	color: #5859D1;
 }
+
 .project-container img {
 	margin-bottom: 30px;
 	border: 2px solid #ccc;
@@ -132,6 +133,17 @@ a:hover {
 	color: #555;
 	margin-top:30px;
 	margin-bottom: 6px;
+}
+
+.project-container .explore-title {
+	font: 35px/1 "oswald";
+	color: #555;
+	margin-top: 150px;
+	margin-bottom: 30px;
+}
+
+.project-container .project-row img{
+	border: none;
 }
 
 /* project page styling end */
