@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Matt Phillips</title>
+    <title>Matt Phillips | {% block title %}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-	
+
 	<!-- Global style, non-bootsrap> -->
     <link href="/static/css/main.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
 
-	<link rel="icon" type="image/png" href="/static/img/favicon.png">
+	<link rel="icon" type="/static/image/png" href="/static/img/favicon.png">
+
+
+    {% block styles %}{% endblock %}
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,57 +24,52 @@
     <![endif]-->
   </head>
   <body>
-	<div class="container landing">
+	<div class="container project-container">
 		<div class="row header">
 			<div class="col-md-12">
-				<p>Matt</p>
-				<p>Phillips</p>
+				<a href="/"><p>Matt</p>
+				<p>Phillips</p></a>
 			</div>
-		</div>
+		</div> <!-- / row header -->
 
+        {% block project_details %}{% endblock %}
+
+		<p class="explore-title">Explore other projects</p>
 		<div class="row project-row">
+            {% if project_title != "Ambient Timer" %}
 			<div class="col-sm-6 col-md-4">
 				<a href="ambient-timer"><img src="/static/img/a-t.png" class="img-responsive"></a>
 				<p><span class="project-title">Ambient Timer</span> a low-stress visual timer with a simple input mechanism for setting the timer</p>
 			</div>
-            <div class="col-sm-6 col-md-4">
-				<a href="hovermarks"><img src="/static/img/f-b.JPG" class="img-responsive"></a>
-				<p><span class="project-title">Hovermarks</span> a tool that helps you quckly annotate a bookhself</p>
-			</div>
-            <div class="col-sm-6 col-md-4">
-				<a href="awesome-box"><img src="/static/img/awesome.jpg" class="img-responsive"></a>
-				<p><span class="project-title">Awesome Box</span> an alternate returns box at your library used by a bunch of public libraries</p>
-			</div>
-            <div class="col-sm-6 col-md-4">
-				<a href="ambient-timer"><img src="/static/img/working.png" class="img-responsive"></a>
-				<p><span class="project-title">Working in Widener</span> a one or two player game set in Harvard's Widener Library</p>
-			</div>
+            {% endif %}
+            {% if project_title != "Pyfav" %}
 			<div class="col-sm-6 col-md-4">
 				<img src="/static/img/t-map.png" class="img-responsive">
 				<p><span class="project-title">Pyfav</span> A Python lib that makes helps you retrieve favicons</p>
+			</div>
+            {% endif %}
+            {% if project_title != "Hovermarks" %}
+			<div class="col-sm-6 col-md-4">
+				<a href="hovermarks"><img src="/static/img/f-b.JPG" class="img-responsive"></a>
+				<p><span class="project-title">Hovermarks</span> a tool that helps you quckly annotate a bookhself</p>
+			</div>
+            {% endif %}
+			<div class="col-sm-6 col-md-4">
+				<a href="ambient-timer"><img src="/static/img/working.png" class="img-responsive"></a>
+				<p><span class="project-title">Working in Widener</span> a one or two player game set in Harvard's Widener Library</p>
 			</div>
 			<div class="col-sm-6 col-md-4">
 				<img src="/static/img/360.jpg" class="img-responsive">
 				<p><span class="project-title">360 Portrait</span> a 360 view of my hands and my head in an easy to use, draggable based interface</p>
 			</div>
+            {% if project_title != "Awesome Box" %}
+			<div class="col-sm-6 col-md-4">
+				<a href="awesome-box"><img src="/static/img/awesome.jpg" class="img-responsive"></a>
+				<p><span class="project-title">Awesome Box</span> an alternate returns box at your library used by a bunch of public libraries</p>
+			</div>
+            {% endif %}
 		</div> <!-- / project-row -->
-		
-		<div class="row about">
-			<div class="col-xs-4">
-				<img src="/static/img/about-image.jpeg" class="img-responsive">
-			</div>
-			<div class="col-xs-8">
-				<p class="project-title">Hello</p>
-				<p>I'm Matt Phillips. This is the place on the Web where I gather and share work. It's a mix of personal and professional interests.</p>
-				<p>I'm really into libraries and a lot of the work I do relates to them. Libraries are amazingly altruistic and possibly the greatest social institution we have. They're are also my livelihood. I work in the <a href="http://librarylab.law.harvard.edu" class="pretty-links">Harvard Library Innovation Lab</a>.</p>
-				<p>In addition to libraries I'm in love with the Internet and the Web, and riding bicycles.</p>
-				<p>I have a background in computing and hold a bachelor's and a master's degree in computer science.</p>
-				<p>Email is the best way to reach me, <a href="mailto:matt@mattphillips.info">matt@mattphillips.info</a></p>
-				<p>Thanks for stopping in.</p>
-			</div>
-		</div>	<!--/ about-->
-  </div> <!-- / container -->
-  
+  </div> <!-- /container -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

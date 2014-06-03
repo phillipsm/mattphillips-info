@@ -10,11 +10,15 @@ def landing():
     
 @app.route('/ambient-timer')
 def projects_ambient_timer():
-    return render_template('projects/ambient-timer.html')
+    return render_template('projects/ambient-timer.html', project_title="Ambient Timer")
     
 @app.route('/awesome-box')
 def projects_awesome_box():
-    return render_template('projects/awesome-box.html')
+    return render_template('projects/awesome-box.html', project_title="Awesome Box")
+
+@app.route('/hovermarks')
+def projects_hovermarks():
+    return render_template('projects/hovermarks.html', project_title="Hovermarks")
 
 if __name__ == '__main__':
     app.run(debug=True)

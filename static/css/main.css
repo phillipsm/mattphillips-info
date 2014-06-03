@@ -15,7 +15,7 @@
 
 .landing .project-title, .project-container .project-row .project-title {
 	font: 400 24px/1 "oswald";
-	letter-spacing: .1em;
+	letter-spacing: .04em;
 	color: #555;
 	margin-right: 5px;
 }

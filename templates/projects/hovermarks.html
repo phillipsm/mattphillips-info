@@ -1,0 +1,45 @@
+{% extends "projects/project-base.html" %}
+
+{% block title %}{{ project_title }}{% endblock %}
+
+{% block styles %}
+    <link href="/static/css/hovermarks.css" rel="stylesheet">
+{% endblock %}
+
+{% block project_details %}
+		<div class="row">
+			<div class="col-md-9">
+				<img src="/static/img/shelf-small.jpg" class="img-responsive">
+                <div class="header-unit">
+                    <div id="video-container">
+                        <video autoplay="" loop="" controls="" class="fillWidth">
+                            <source src="/static/img/final-small.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+                        </video>
+                    </div>
+                </div>
+				<img src="/static/img/sign.jpg" class="img-responsive">
+			</div>
+			<div class="col-md-3">
+				<p class='title'>Hovermarks</p>
+				<p class="link-out"><a href="http://ambienttimer.com">hovermarks.org</a></p>
+				<p class="desc-title">About</p>
+				<p>
+				    Hovermarks help you annotate a bookshelf. They are a fun and ephemeral way to focus attention on items on a shelf and can bring fresh air to stale sections of library stacks.
+				</p>
+                <p>
+                    Hovermarks are papercraft. They are printed patterns that are folded and placed in an item just like a regular bookmark.
+                </p>
+				<p class="desc-title">Why</p>
+                <p>
+                    Bookshelves and library stacks should be interactive. They should invite curration, and not only from librarians. Hovermarks encourage this playfulness by being easy to create and cheap enough to be disposable.
+                </p>
+                <p>
+                    The ephemerality of the Hovermark is its strength. It's like street art. An empty wall is a canvas. A member of the community decorates it and when it fades away, it's ready for someone else to impart it with their vision.
+                </p>
+				<p class="desc-title">Check it out</p>
+				<p>
+					Hovermark templates and more info about the project can be found at <a href="http://hovermarks.org">hovermarks.org</a>
+				</p>
+			</div>
+		</div> <!--/ row-->
+{% endblock %}
