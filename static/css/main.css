@@ -118,6 +118,10 @@ a:hover {
 	border: 2px solid #ccc;
 }
 
+.project-container img.no-border {
+    border: none;
+}
+
 .project-container .title {
 	font: 35px/1 "oswald";
 	color: #555;
