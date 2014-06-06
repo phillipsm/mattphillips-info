@@ -20,6 +20,14 @@ def projects_awesome_box():
 def projects_hovermarks():
     return render_template('projects/hovermarks.html', project_title="Hovermarks")
 
+@app.route('/working-in-widener')
+def projects_working_in_widener():
+    return render_template('projects/working-in-widener.html', project_title="Working in Widener")
+
+@app.route('/pyfav')
+def projects_pyfav():
+    return render_template('projects/pyfav.html', project_title="Pyfav")
+
 if __name__ == '__main__':
     app.run(debug=True)
     

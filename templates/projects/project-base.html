@@ -44,8 +44,8 @@
             {% endif %}
             {% if project_title != "Pyfav" %}
 			<div class="col-sm-6 col-md-4">
-				<img src="/static/img/t-map.png" class="img-responsive">
-				<p><span class="project-title">Pyfav</span> A Python lib that makes helps you retrieve favicons</p>
+				<a href="pyfav"><img src="/static/img/pyfav.jpg" class="img-responsive"></a>
+				<p><span class="project-title">pyfav</span> A Python lib that helps you retrieve favicons</p>
 			</div>
             {% endif %}
             {% if project_title != "Hovermarks" %}
@@ -54,10 +54,12 @@
 				<p><span class="project-title">Hovermarks</span> a tool that helps you quckly annotate a bookhself</p>
 			</div>
             {% endif %}
+            {% if project_title != "Working in Widener" %}
 			<div class="col-sm-6 col-md-4">
-				<a href="ambient-timer"><img src="/static/img/working.png" class="img-responsive"></a>
+				<a href="working-in-widener"><img src="/static/img/working.png" class="img-responsive"></a>
 				<p><span class="project-title">Working in Widener</span> a one or two player game set in Harvard's Widener Library</p>
 			</div>
+            {% endif %}
 			<div class="col-sm-6 col-md-4">
 				<img src="/static/img/360.jpg" class="img-responsive">
 				<p><span class="project-title">360 Portrait</span> a 360 view of my hands and my head in an easy to use, draggable based interface</p>

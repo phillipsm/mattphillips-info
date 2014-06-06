@@ -1,0 +1,18 @@
+.left-pane .desc-title {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.left-pane .desc-title:first-of-type {
+    margin-top: 0px;
+}
+
+.left-pane img {
+    border: none;
+}
+
+pre {
+    margin-bottom: 25px;
+    margin-top: 10px;
+    background-color: #EDFFF6;
+}
