@@ -28,6 +28,10 @@ def projects_working_in_widener():
 def projects_pyfav():
     return render_template('projects/pyfav.html', project_title="Pyfav")
 
+@app.route('/thelibrary-fm')
+def projects_thelibrary_fm():
+    return render_template('projects/thelibrary-fm.html', project_title="TheLibrary.fm")
+
 if __name__ == '__main__':
     app.run(debug=True)
     
