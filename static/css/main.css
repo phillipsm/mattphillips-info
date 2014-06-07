@@ -114,12 +114,15 @@ a:hover {
 }
 
 .project-container img {
-	margin-bottom: 30px;
 	border: 2px solid #ccc;
 }
 
 .project-container img.no-border {
     border: none;
+}
+
+.project-container img.no-desc {
+    margin-bottom: 30px;
 }
 
 .project-container .title {
@@ -148,6 +151,13 @@ a:hover {
 
 .project-container .project-row img{
 	border: none;
+}
+
+.project-container .img-desc{
+	color: #888;
+	font-size: 13px;
+	margin-top: 4px;
+	margin-bottom: 30px
 }
 
 /* project page styling end */
