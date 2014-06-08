@@ -30,7 +30,7 @@ def projects_pyfav():
 
 @app.route('/thelibrary-fm')
 def projects_thelibrary_fm():
-    return render_template('projects/thelibrary-fm.html', project_title="TheLibrary.fm")
+    return render_template('projects/thelibrary-fm.html', project_title="thelibrary.fm")
 
 if __name__ == '__main__':
     app.run(debug=True)
