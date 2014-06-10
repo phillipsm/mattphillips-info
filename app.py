@@ -32,6 +32,14 @@ def projects_pyfav():
 def projects_thelibrary_fm():
     return render_template('projects/thelibrary-fm.html', project_title="thelibrary.fm")
 
+@app.route('/360')
+def projects_360():
+    return render_template('projects/360.html', project_title="360 Portrait")
+
+@app.route('/360/hand')
+def projects_360_hand():
+    return render_template('projects/360-hand.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
     
