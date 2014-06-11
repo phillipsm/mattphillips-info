@@ -45,7 +45,7 @@ $(document).ready(function () {
 			demoMode = true,
 			fakePointer = {
 				x: 0,
-				speed: .1
+				speed: 3
 			},
 			fakePointerTimer = 0;
 	
