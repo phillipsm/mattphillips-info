@@ -115,11 +115,11 @@ a:hover {
 }
 
 .project-container img {
-	border: 2px solid #ccc;
+
 }
 
-.project-container img.no-border {
-    border: none;
+.project-container img.with-border {
+    border: 2px solid #ccc;
 }
 
 .project-container img.no-desc {
