@@ -10,7 +10,7 @@
 }
 
 .landing .project-row img, .project-container .project-row img {
-	box-shadow: 0 0 20px #FFF9F9;
+	box-shadow: 0 0 33px #FFF9F9;
 }
 
 .landing .project-title, .project-container .project-row .project-title {
@@ -133,7 +133,7 @@ a:hover {
 
 .project-container .link-out {
 	font-size: 18px;
-	margin-bottom: 35px;
+	margin-bottom: 55px;
 }
 
 .project-container .desc-title {
