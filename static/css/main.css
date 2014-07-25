@@ -66,6 +66,10 @@ a:hover {
 	.landing .about {
 		margin-top: 0;
 	}
+
+	.proj-container {
+
+	}
 }
 
 @media(min-width:768px) {
