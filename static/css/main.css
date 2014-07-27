@@ -42,6 +42,10 @@
 	font-size: 15px;
 }
 
+.about img {
+margin-bottom: 17px;
+}
+
 a {
 	color: #5859D1;
 }
