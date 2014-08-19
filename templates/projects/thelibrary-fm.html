@@ -13,7 +13,10 @@
 			<div class="col-md-3">
 				<p class='title'>{{ project_title }}</p>
                 <p>experience the library with your ears</p>
-				<p class="link-out"><a href="http://thelibrary.fm" target="_blank">{{ project_title }}</a></p>
+                <div class="link-out">
+				    <span><a href="http://thelibrary.fm" target="_blank">{{ project_title }}</a></span>
+                </div>
+
                 <p class="desc-title">About</p>
 				<p>
 					thelibrary.fm is a site that houses sound recordings of libraries. It helps you hop into a library, aurally, from anywhere on the Web.
@@ -36,8 +39,11 @@
 				</p>
 				<p class="desc-title">Check it out</p>
 				<p>
-					This description isn't half as interesting as the thing itself. <a href="http://thelibrary.fm" target="_blank">thelibrary.fm</a>
+					This description isn't half as interesting as the thing itself.
 				</p>
+                <div class="link-out">
+				    <span><a href="http://thelibrary.fm" target="_blank">{{ project_title }}</a></span>
+                </div>
 			</div>
 		</div> <!--/ row-->
 {% endblock %}

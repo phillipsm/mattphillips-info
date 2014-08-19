@@ -54,7 +54,7 @@ a {
 a:hover {
 	color: #5859D1;
     text-decoration: none;
-    border-bottom: solid 1px #eee;
+    border-bottom: solid 1px #ddd;
 }
 
 
@@ -141,14 +141,29 @@ a:hover {
 }
 
 .project-container .link-out {
-	font-size: 18px;
-	margin-bottom: 55px;
+    margin-top: 22px;
+    margin-bottom: 60px;
+}
+
+.project-container .link-out span {
+	font-size: 22px;
+	background-color: #fff47a;
+	padding: 3px 8px;
+}
+
+.project-container .link-out span a {
+	color: #0D76FF;
+}
+
+.project-container .link-out span a:hover{
+    text-decoration: none;
+    border-bottom: solid 1px #95c3ff;
 }
 
 .project-container .desc-title {
 	font: 18px/1 "oswald";
 	color: #555;
-	margin-top:30px;
+	margin-top: 30px;
 	margin-bottom: 8px;
 }
 
