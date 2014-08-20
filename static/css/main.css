@@ -9,10 +9,6 @@
 	color: #555;
 }
 
-.landing .project-row img, .project-container .project-row img {
-	/*box-shadow: 0 0 33px #FFF9F9;*/
-}
-
 .landing .project-title, .project-container .project-row .project-title {
 	font: 400 24px/1 "oswald";
 	letter-spacing: .04em;
