@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, redirect, render_template
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
@@ -7,7 +7,15 @@ app.url_map.strict_slashes = False
 @app.route('/')
 def landing():
     return render_template('landing.html')
-    
+
+@app.route('/resume')
+def resume():
+    return redirect('/static/docs/resume.pdf', code=301)
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
 @app.route('/ambient-timer')
 def projects_ambient_timer():
     return render_template('projects/ambient-timer.html', project_title="Ambient Timer")

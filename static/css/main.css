@@ -57,7 +57,7 @@
 }
 
 .about img {
-margin-bottom: 17px;
+    margin-bottom: 17px;
 }
 
 a {
@@ -133,7 +133,7 @@ a:hover {
 }
 
 .project-container .header a:hover {
-	color: #5859D1;
+	color: #2cafff;
 }
 
 .project-container img {
