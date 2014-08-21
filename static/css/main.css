@@ -22,10 +22,10 @@
 }
 
 .proj-container:hover {
-    animation:vibrate 200ms linear 0s 1;
-    -webkit-animation: vibrate 200ms linear 0s 2;
-    -moz-animation: vibrate 200ms linear 0s 1;
-    -o-animation: vibrate 200ms linear 0s 1;
+    animation: vibrate-wide 200ms linear 0s 1;
+    -webkit-animation: vibrate-wide 200ms linear 0s 1;
+    -moz-animation: vibrate-wide 200ms linear 0s 1;
+    -o-animation: vibrate-wide 200ms linear 0s 1;
 }
 
 .proj-container:hover .project-title {
@@ -217,7 +217,7 @@ a:hover {
 
 
 /*
-    Our vibrate animation sytling
+    Our vibrate animation styling
 */
 
 @keyframes vibrate {
@@ -247,7 +247,7 @@ a:hover {
         right: 0px;
     }
     50% {
-        right: 5px;
+        right: 3px;
     }
     100% {
         right: 0px;
@@ -259,6 +259,51 @@ a:hover {
     }
     50% {
         right: 3px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+
+@keyframes vibrate-wide {
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: 6px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+@-moz-keyframes vibrate-wide {
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: 6px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+@-webkit-keyframes vibrate-wide {
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: 6px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+@-o-keyframes vibrate-wide {
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: 6px;
     }
     100% {
         right: 0px;
