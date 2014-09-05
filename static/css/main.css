@@ -61,13 +61,22 @@
 }
 
 a {
-	color: #0085d6;
+    color: #2895f1;
+    border-bottom: solid 1px #fff;
+	-webkit-transition: 250ms ease-in-out;
+	-moz-transition: 250ms ease-in-out;
+	-o-transition: 250ms ease-in-out;
+    transition: 250ms ease-in-out;
 }
 
 a:hover {
-	color: #2cafff;
+    color: #2895f1;
     text-decoration: none;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px #999;
+    -webkit-transition: 250ms ease-in-out;
+	-moz-transition: 250ms ease-in-out;
+	-o-transition: 250ms ease-in-out;
+    transition: 250ms ease-in-out;
 }
 
 
@@ -133,7 +142,7 @@ a:hover {
 }
 
 .project-container .header a:hover {
-	color: #2cafff;
+	color: #2895f1;
 }
 
 .project-container img {
@@ -167,12 +176,12 @@ a:hover {
 .project-container .link-out span a {
 	color: #0D76FF;
 	position: relative;
+	border:none;
 }
 
 .project-container .link-out span a:hover {
     text-decoration: none;
     border: none;
-
     animation:vibrate 200ms linear 0s 2;
     -webkit-animation: vibrate 200ms linear 0s 2;
     -moz-animation: vibrate 200ms linear 0s 2;
