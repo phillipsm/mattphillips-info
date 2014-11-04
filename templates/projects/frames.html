@@ -1,0 +1,67 @@
+{% extends "projects/project-base.html" %}
+
+{% block title %}{{ project_title }}{% endblock %}
+
+{% block styles %}
+<style type="text/css">
+.project-container .img-desc {
+	margin-top: 18px;
+}
+
+
+@media(min-width:767px) {
+	.project-container .sparse-image {
+		margin-bottom: 80px;
+	}
+}
+
+</style>
+
+{% endblock %}
+
+{% block project_details %}
+		<div class="row">
+			<div class="col-md-9">
+				<img src="/static/img/monitor.png" class="img-responsive">
+                <p class="img-desc sparse-image">The monitor frame. It's ready to provide context for your content.</p>
+				<div class="row">
+					<div class="col-xs-6">
+						<img src="/static/img/phone-vertical-raw.jpg" class="img-responsive pull-right">
+					</div>
+					<div class="col-xs-6">
+						<img src="/static/img/phone-vertical-framed.jpg" class="img-responsive pull-left">
+					</div>
+				</div>
+                <p class="img-desc">The phone frame. A comparison between an unframed captured and a framed capture.</p>
+			</div>
+			<div class="col-md-3">
+				<p class='title'>{{ project_title }}</p>
+                <p> a collection of freely licensed  images that help you put your screen captures in context</p>
+                <div class="link-out">
+				    <span><a href="http://librarylab.law.harvard.edu/frames" target="_blank">View the frames</a></span>
+                </div>
+                <p class="desc-title">About</p>
+				<p>
+					Often times it's helpful to share a screen capture of a webpage, but that capture can sometimes be jarring and confusing.
+				</p>
+				<p>
+					This project, Frames, is a collection of high quality images that you can use to place your screen captures in context.
+				</p>
+                <p class="desc-title">Why it's good</p>
+				<p>
+					A screen capture that isn't in a frame forces the viewer to contextualize it. That forced contextualization takes away from your content and blunts the focus of the viewer.
+                <p>
+                    These frames provide a focal point for your content. They're plain and they're friendly. Their aim is to stay out of the way while thye highlight your scren captures.
+				</p>
+				<p class="desc-title">Source</p>
+				<p>
+					All frame images have been placed in the public domain thanks to the <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 license</a>.  You can browse the images files at <a href="https://github.com/harvard-lil/frames" target="_blank">GitHub</a>.
+				</p>
+				<p class="desc-title">Check it out</p>
+				<p>Browse through the frames and seem them in action.</p>
+                <div class="link-out">
+				    <span><a href="http://librarylab.law.harvard.edu/frames" target="_blank">View the frames</a></span>
+                </div>
+			</div>
+		</div> <!--/ row-->
+{% endblock %}

@@ -47,6 +47,10 @@ def projects_360():
 @app.route('/360/hand')
 def projects_360_hand():
     return render_template('projects/360-hand.html')
+    
+@app.route('/frames')
+def projects_frames():
+    return render_template('projects/frames.html', project_title="Frames")
 
 if __name__ == '__main__':
     app.run(debug=True)
