@@ -7,8 +7,8 @@
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Global style, non-bootsrap> -->
-    <link href="/static/css/main.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+    <link href="/static/css/main.css" rel="stylesheet">
 
 	<link rel="icon" type="/static/image/png" href="/static/img/favicon.png">
 
@@ -36,40 +36,53 @@
 
 		<p class="explore-title">Explore other projects</p>
 		<div class="row project-row">
-            {% if project_title != "Ambient Timer" %}
+            {% if project_title != "Frames" %}
 			<div class="col-xs-12 col-sm-6 col-md-4 proj-container">
-				<a href="ambient-timer"><img src="/static/img/a-t-small.jpg" class="img-responsive">
-				<p><span class="project-title">Ambient Timer</span> a low-stress visual timer with a simple input mechanism for setting the countdown</p></a>
+				<a href="frames"><img src="/static/img/frames-proj.png" class="img-responsive">
+					<p><span class="project-title">Frames</span> a collection of freely licensed images that help you put your screen captures in context</p>
+				</a>
 			</div>
             {% endif %}
             {% if project_title != "Hovermarks" %}
             <div class="col-xs-12 col-sm-6 col-md-4 proj-container">
 				<a href="hovermarks"><img src="/static/img/hovermarks-shelf.png" class="img-responsive">
-				<p><span class="project-title">Hovermarks</span> annotate a physical bookshelf using bookmarks that face the spine instead of the cover</p></a>
+					<p><span class="project-title">Hovermarks</span> annotate a physical bookshelf using bookmarks that face the spine instead of the cover</p>
+				</a>
+			</div>
+            {% endif %}
+            {% if project_title != "Ambient Timer" %}
+            <div class="col-xs-12 col-sm-6 col-md-4 proj-container">
+				<a href="ambient-timer"><img src="/static/img/a-t-small.jpg" class="img-responsive">
+					<p><span class="project-title">Ambient Timer</span> a low-stress visual timer with a simple input mechanism for setting the countdown</p>
+				</a>
 			</div>
             {% endif %}
             {% if project_title != "Awesome Box" %}
             <div class="col-xs-12 col-sm-6 col-md-4 proj-container">
 				<a href="awesome-box"><img src="/static/img/ab-core-small.jpg" class="img-responsive">
-				<p><span class="project-title">Awesome Box</span> an alternate returns box that sits alongside your library's regular book drop</p></a>
-			</div>
-            {% endif %}
-            {% if project_title != "360 Portrait" %}
-            <div class="col-xs-12 col-sm-6 col-md-4 proj-container">
-				<a href="360"><img src="/static/img/360-proj.jpg" class="img-responsive">
-				<p><span class="project-title">360° Portrait</span> a 360° view of my hand in a fun, draggable interface</p></a>
+					<p><span class="project-title">Awesome Box</span> an alternate returns box that sits alongside your library's regular book drop</p>
+				</a>
 			</div>
             {% endif %}
             {% if project_title != "thelibrary.fm" %}
             <div class="col-xs-12 col-sm-6 col-md-4 proj-container">
 				<a href="thelibrary-fm"><img src="/static/img/listening-in-the-stacks-small.jpg" class="img-responsive">
-				<p><span class="project-title">thelibrary.fm</span> experience the library with your ears</p></a>
+					<p><span class="project-title">thelibrary.fm</span> experience the library with your ears</p>
+				</a>
 			</div>
             {% endif %}
             {% if project_title != "Pyfav" %}
 			<div class="col-xs-12 col-sm-6 col-md-4 proj-container">
 				<a href="pyfav"><img src="/static/img/pyfav-ill.png" class="img-responsive">
-				<p><span class="project-title">pyfav</span> A Python library that removes the annoyance of retrieving favicons</p></a>
+					<p><span class="project-title">pyfav</span> A Python library that removes the annoyance of retrieving favicons</p>
+				</a>
+			</div>
+            {% endif %}
+            {% if project_title != "360 Portrait" %}
+			<div class="col-xs-12 col-sm-6 col-md-4 proj-container">
+				<a href="360"><img src="/static/img/360-proj.jpg" class="img-responsive">
+					<p><span class="project-title">360° Portrait</span> a 360° view of my hand in a fun, draggable interface</p>
+				</a>
 			</div>
             {% endif %}
         </div> <!-- / project-row -->

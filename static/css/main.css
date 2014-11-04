@@ -129,6 +129,10 @@ a:hover {
 	margin-bottom: 10px;
 }
 
+.project-container p{
+	color: #666;
+}
+
 .project-container .header {
 	font: 400 24px/.65 "oswald";
 	text-transform: uppercase;
