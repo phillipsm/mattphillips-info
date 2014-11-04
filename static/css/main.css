@@ -129,7 +129,8 @@ a:hover {
 	margin-bottom: 10px;
 }
 
-.project-container p{
+.project-container .project-text {
+	font-size: 15px;
 	color: #666;
 }
 
@@ -193,7 +194,7 @@ a:hover {
 }
 
 .project-container .desc-title {
-	font: 18px/1 "oswald";
+	font: 20px/1 "oswald";
 	color: #555;
 	margin-top: 30px;
 	margin-bottom: 8px;
