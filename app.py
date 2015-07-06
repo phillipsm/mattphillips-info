@@ -52,7 +52,11 @@ def projects_360_hand():
 def projects_frames():
     return render_template('projects/frames.html', project_title="Frames")
 
+@app.route('/stereo-cam')
+def projects_frames():
+    return render_template('projects/stereo-cam.html', project_title="Stereo Camera")
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
     
     

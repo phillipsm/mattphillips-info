@@ -1,0 +1,70 @@
+{% extends "projects/project-base.html" %}
+
+{% block title %}{{ project_title }}{% endblock %}
+
+{% block project_details %}
+		<div class="row">
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col-xs-6">
+						<img src="/static/img/shopping.gif" class="img-responsive">
+                				<p class="img-desc">Grocery shopping. Somerville, MA. June, 2015.</p>
+					</div>
+					<div class="col-xs-6">
+						<img src="/static/img/mowing.gif" class="img-responsive">
+                				<p class="img-desc">Mowing the lawn. Somerville, MA. June, 2015.</p>
+					</div>
+				</div>
+                                <div class="row">
+                                        <div class="col-xs-6">
+                                                <img src="/static/img/table-green.gif" class="img-responsive">
+                                                <p class="img-desc">The day's workspace. Somerville, MA. July, 2015.</p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                                <img src="/static/img/table-orange.gif" class="img-responsive">
+                                                <p class="img-desc">The day's workspace. Somerville, MA. July, 2015.</p>
+                                        </div>
+                                </div>
+				<div class="row">
+					<div class="col-xs-12">
+
+		<img src="/static/img/camera-proto-2-front.jpg" class="img-responsive">
+                                <p class="img-desc">Second (and most recent) prototype of Arduino based stereoscopic camera mounted in laser cut acrylic plates.</p>
+                                <img src="/static/img/camera-proto-2-side.jpg" class="img-responsive">
+                <p class="img-desc">Side view of the acrylic and electronics sandwich.</p>
+                                <img src="/static/img/camera-proto-2-back.jpg" class="img-responsive">
+                <p class="img-desc">The second prototype uses a smaller Arduino and a rechargable battery, but the rest of the components are the same.</p>
+
+				<img src="/static/img/ard-cam-v1-back.jpg" class="img-responsive">
+                		<p class="img-desc">First prototype of Arduino based stereoscopic camera using a plastic project box.</p>
+				<img src="/static/img/ard-cam-v1-front.jpg" class="img-responsive">
+                <p class="img-desc">The front of the first prototype. Four cameras ready for stereo fun.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 project-text">
+				<p class='title'>{{ project_title }}</p>
+                <p> an investigation of digital stereoscopic photography</p>
+                <p class="desc-title">About</p>
+				<p>
+				    We see in stereo. We have two eyes and each one captures its own image as we navigate the world. Our brains wire the two images together providing visuals rich with depth, texture, and increased dimensionality.</p>
+				<p>
+				What if our cameras could see the way we see? They can. And, it's not difficult - we simply need to add lenses.</p>	
+				</p>
+				<p>This is an investigation in how to build an open, affordable, digital stereoscopic camera.</p>
+                <p class="desc-title">Technology</p>
+				<p>
+                                I have created two prototypes that leverage the Arduino platform. Both prototypes use four <a href="http://www.adafruit.com/product/397">Adafruit serial JPEG cameras</a>, wired to <a href="http://www.adafruit.com/product/254">Adafruit's SD module</a>, controlled through an <a href="https://www.arduino.cc/">Arduino microcontroller</a>.
+				</p>
+<p>The first prototype is built around an <a href="https://www.arduino.cc/en/Main/ArduinoBoardMega2560">Arduino Mega</a> and is housed in a plastic project box. This prototype functions, but is rather delicate due to its exposed wires and battery.</p>
+<p>The second prototype uses <a href="http://www.adafruit.com/product/2590">Adafruit's Metro Mini</a> and is fitted in three layers of quarter inch, laser cut acrylic. I also added a rechargable battery. This iteration is more robust, better looking, and more usable in the field.</p>
+				<p class="desc-title">Source</p>
+				<p>
+					Source code is available through a dual MIT/GPL license on <a href="https://github.com/phillipsm/stereo-cam" target="_blank">GitHub</a>.
+				</p>
+				<p>
+					I've also <a href="https://github.com/phillipsm/stereo-cam/tree/master/templates">bundled the templates</a> I used to laser cut the acrylic plates in the latest prototype. Enjoy. 
+				</p>
+			</div>
+		</div> <!--/ row-->
+{% endblock %}
