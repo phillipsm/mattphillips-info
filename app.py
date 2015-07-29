@@ -53,7 +53,7 @@ def projects_frames():
     return render_template('projects/frames.html', project_title="Frames")
 
 @app.route('/stereo-cam')
-def projects_frames():
+def projects_stereo():
     return render_template('projects/stereo-cam.html', project_title="Stereo Camera")
 
 if __name__ == '__main__':

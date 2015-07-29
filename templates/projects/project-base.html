@@ -36,6 +36,13 @@
 
 		<p class="explore-title">Explore other projects</p>
 		<div class="row project-row">
+			{% if project_title != "Stereo Camera" %}
+			<div class="col-xs-12 col-sm-6 col-md-4 proj-container">
+				<a href="stereo-cam"><img src="/static/img/stereo-cam-proj.jpg" class="img-responsive">
+					<p><span class="project-title">Stereoscopic Camera</span> an investigation of digital stereoscopic photography</p>
+				</a>
+			</div>
+			{% endif %}
             {% if project_title != "Frames" %}
 			<div class="col-xs-12 col-sm-6 col-md-4 proj-container">
 				<a href="frames"><img src="/static/img/frames-proj.png" class="img-responsive">
