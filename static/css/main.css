@@ -218,6 +218,10 @@ a:hover {
 	margin-bottom: 30px
 }
 
+.project-container .full-row-desc{
+    margin-top: -25px;
+}
+
 /* project page styling end */
 
 

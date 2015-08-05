@@ -22,31 +22,35 @@
                     </div>
                     <div class="col-xs-6">
                         <img src="/static/img/table-purple.gif" class="img-responsive">
-						<p class="img-desc">Multicolor view of the day's workspace.</p>
                     </div>
                     <div class="col-xs-6">
                         <img src="/static/img/table-green.gif" class="img-responsive">
                         <p class="img-desc"></p>
                     </div>
                 </div>
+                <div class="row">
+					<div class="col-xs-12">
+		            	<p class="img-desc full-row-desc">Multicolor view of the day's workspace.</p>
+		            </div>
+		        </div>
 				<div class="row">
 					<div class="col-xs-12">
 						<img src="/static/img/camera-proto-2-front.jpg" class="img-responsive">
-						<p class="img-desc">Second (and most recent) prototype of Arduino based stereoscopic camera mounted in laser cut acrylic plates.</p>
+						<p class="img-desc">The front acrylic plate has four holes that allow the cameras to capture their images.</p>
 						<img src="/static/img/camera-proto-2-side.jpg" class="img-responsive">
 						<p class="img-desc">Side view of the acrylic and electronics sandwich.</p>
 						<img src="/static/img/camera-proto-2-back.jpg" class="img-responsive">
-						<p class="img-desc">The second prototype uses a smaller Arduino and a rechargable battery, but the rest of the components are the same.</p>
+						<p class="img-desc">The back reveals the circuit, the battery, and the shutter release button.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-6">
 						<img src="/static/img/shopping.gif" class="img-responsive">
-                		<p class="img-desc">Grocery shopping. Somerville, MA. June, 2015.</p>
+                		<p class="img-desc">Grocery shopping. Taken with a film based stereoscopic camera.</p>
 					</div>
 					<div class="col-md-6">
 						<img src="/static/img/mowing.gif" class="img-responsive">
-                		<p class="img-desc">Mowing the lawn. Somerville, MA. June, 2015.</p>
+                		<p class="img-desc">Mowing the lawn. Taken with a film based stereoscopic camera.</p>
 					</div>
 				</div>
 			</div>
@@ -55,17 +59,18 @@
                 <p> an investigation of digital stereoscopic photography</p>
                 <p class="desc-title">About</p>
 				<p>
-				    We see in stereo. We have two eyes and each one captures its own image as we navigate the world. Our brains wire the two images together providing visuals rich with depth, texture, and increased dimensionality.</p>
+				    We see in stereo. We have two eyes and each one captures its own image as we navigate the world. Our brains wire the two images together providing visuals rich with depth and texture.</p>
 				<p>
-				What if our cameras could see the way we see? They can. And, it's not difficult - we simply need to add lenses.</p>	
+				What if our cameras could see the way we see? They can - we simply need to add lenses.</p>	
 				</p>
 				<p>This is an investigation in how to build an open, affordable, digital stereoscopic camera.</p>
                 <p class="desc-title">Technology</p>
 				<p>
-                                I have created two prototypes that leverage the Arduino platform. Both prototypes use four <a href="http://www.adafruit.com/product/397">cameras</a>, wired to an <a href="http://www.adafruit.com/product/254">SD module</a>, controlled through a <a href="https://www.arduino.cc/">microcontroller</a>.
+                    I have created several stereoscopic camera prototypes. The latest uses four <a href="http://www.adafruit.com/product/397">cameras</a>, wired to an <a href="http://www.adafruit.com/product/254">SD card</a>, controlled by an <a href="http://www.adafruit.com/product/2590">Arduino microcontroller</a>.
 				</p>
-<p>The first prototype is built around an <a href="https://www.arduino.cc/en/Main/ArduinoBoardMega2560">Arduino Mega</a> and is housed in a plastic project box. This prototype functions, but is rather delicate due to its exposed wires and battery.</p>
-<p>The second prototype uses <a href="http://www.adafruit.com/product/2590">Adafruit's Metro Mini</a> and is fitted between three layers of quarter inch, laser cut acrylic. I also added a rechargable battery. This iteration is more robust, better looking, and much more usable in the field.</p>
+				<p>
+					When the shutter release button is pressed, the camera writes four simutanously captured images to the SD card. From the SD card, I link the images toghether in Photoshop and save them as a six frame animated GIF.
+				</p>
 				<p class="desc-title">Source</p>
 				<p>
 					Source code is available through a dual MIT/GPL license on <a href="https://github.com/phillipsm/stereo-cam" target="_blank">GitHub</a>.
